@@ -1,0 +1,60 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter Tight', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  margin-right: 12px;
+}
+
+.button-reset {
+  border-color: green;
+  color: green;
+  margin-top: 12px;
+}
+
+.button-reset:hover {
+  background-color: green;
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  padding: 18px 30px;
+  border-radius: 17px;
+}
+
+.container {
+  width: 375px;
+  padding: 16px;
+  margin: 0 auto;
+}
