@@ -4,7 +4,7 @@ const Options = ({
   feedbackTypes,
   updateFeedback,
   totalFeedback,
-  setFeedbackTypes,
+  resetFeedback,
 }) => {
   return (
     <div className={s.container}>
@@ -19,11 +19,7 @@ const Options = ({
         );
       })}
       {totalFeedback > 0 && (
-        <button
-          onClick={() => setFeedbackTypes({ good: 0, neutral: 0, bad: 0 })}
-        >
-          Reset
-        </button>
+        <button onClick={() => resetFeedback()}>Reset</button>
       )}
     </div>
   );

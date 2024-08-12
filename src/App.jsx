@@ -42,6 +42,14 @@ function App() {
     });
   };
 
+  const resetFeedback = () => {
+    setFeedbackTypes({
+      good: 0,
+      neutral: 0,
+      bad: 0,
+    });
+  };
+
   return (
     <>
       <Description
@@ -52,7 +60,7 @@ function App() {
         feedbackTypes={feedbackTypes}
         updateFeedback={updateFeedback}
         totalFeedback={totalFeedback}
-        setFeedbackTypes={setFeedbackTypes}
+        resetFeedback={resetFeedback}
       />
       {totalFeedback > 0 ? (
         <Feedback
